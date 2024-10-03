@@ -7,26 +7,12 @@
 // The function should return an empty object if the input array is empty.
 
 const countOccurrences = (arr) => {
-  if (arr.length === 0) {
-    return {};
-  }
-  let resultObjMap = new Map();
+  let countObj = arr.reduce((count, item) => {
+    count[item] = (count[item] || 0) + 1;
+    return count;
+  }, {});
 
-  for (let i = 0; i < arr.length; i++) {
-    const arrItem = arr[i];
-    if (resultObjMap.has(arrItem)) {
-      resultObjMap.set(arrItem, resultObjMap.get(arrItem) + 1);
-    } else {
-      resultObjMap.set(arrItem, 1);
-    }
-  }
-
-  let resultObj = {};
-  for (let [key, value] of resultObjMap) {
-    resultObj[key] = resultObjMap[value];
-  }
-
-  return resultObjMap;
+  return countObj;
 };
 
 // Example of usage:
