@@ -1,16 +1,14 @@
-var twoSum = function (numbers, target) {
-  let index1 = 0;
-  let index2 = numbers.length - 1;
-  while (index1 < index2) {
-    const sum = numbers[index1] + numbers[index2];
-    if (numbers[index1] + numbers[index2] === target) {
-      return [index1 + 1, index2 + 1];
+var twoSum = function (nums, target) {
+  let obj = {};
+
+  for (let i = 0; i < nums.length; i++) {
+    const complement = target - nums[i];
+
+    if (complement in obj) {
+      return [obj[complement], i];
     }
-    if (sum < target) {
-      index1++;
-    } else {
-      index2--;
-    }
+
+    obj[nums[i]] = i;
   }
 };
 
