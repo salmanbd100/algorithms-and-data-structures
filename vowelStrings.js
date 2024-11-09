@@ -3,7 +3,7 @@ var capitalizeTitle = function (title) {
   for (let i = 0; i < arrOfString.length; i++) {
     const word = arrOfString[i].toLowerCase();
     if (word.length > 2) {
-      arrOfString[i] = word.charAt(0).toUpperCase() + word.slice(1);
+      arrOfString[i] = word[0].toUpperCase() + word.slice(1);
     } else {
       arrOfString[i] = word;
     }
@@ -12,7 +12,3 @@ var capitalizeTitle = function (title) {
 };
 
 console.log(capitalizeTitle("capiTalIze tHe titLe"));
-
-arr = [0, 1, 2];
-// arr[1]= 2;
-console.log(arr[1]);
