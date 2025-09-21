@@ -1,4 +1,4 @@
-function subarraySum(nums: number[], k: number): number {
+function subarraySum(nums: number[], k: number){
   let map = new Map<number, number>([[0, 1]]);
   let current: number = 0;
   let matches: number = 0;

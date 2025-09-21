@@ -1,4 +1,4 @@
-function chunk(arr: any[], size: number): any[] {
+function chunk(arr: any[], size: number){
   // take a emty array resultArr
   // WHILE LOOP until main arr.length < 0
   // -- splice(0, size) and push it into resultArr

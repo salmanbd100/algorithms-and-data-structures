@@ -1,4 +1,4 @@
-function intersection(nums1: number[], nums2: number[]): number[] {
+function intersection(nums1: number[], nums2: number[]){
   // create unique item list for num1
   // create unique item list for num2
   // create empty result array

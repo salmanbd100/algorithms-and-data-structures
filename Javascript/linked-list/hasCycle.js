@@ -8,7 +8,7 @@ class ListNode {
   }
 }
 
-function hasCycle(head: ListNode | null): boolean {
+function hasCycle(head: ListNode | null){
   if (!head || !head.next) return false;
 
   let slow: ListNode | null = head;

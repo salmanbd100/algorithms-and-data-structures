@@ -1,4 +1,4 @@
-function checkIfPangram(sentence: string): boolean {
+function checkIfPangram(sentence: string){
   const sentenceSet = new Set(sentence);
   return sentenceSet.size === 26;
 }

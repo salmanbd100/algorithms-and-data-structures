@@ -1,4 +1,4 @@
-function vowelStrings(words: string[], left: number, right: number): number {
+function vowelStrings(words: string[], left: number, right: number){
   // set data with vowel (a,e,i,o,u) using new Set Method
   // set count with 0
   // Loop Start from left to right

@@ -1,5 +1,5 @@
-function canConstruct(ransomNote: string, magazine: string): boolean {
-  const hashMap: { [key: string]: number } = {};
+function canConstruct(ransomNote, magazine) {
+  const hashMap = {};
   for (let word of magazine) {
     hashMap[word] = (hashMap[word] || 0) + 1;
   }

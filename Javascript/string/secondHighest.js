@@ -1,4 +1,4 @@
-function secondHighest2(s: string): number {
+function secondHighest2(s: string){
   const stringSet = new Set(s);
   const numberArr: number[] = [];
   for (const elm of stringSet) {

@@ -1,4 +1,4 @@
-function reverseString(s: string[]): void {
+function reverseString(s: string[]){
   let left = 0;
   let right = s.length - 1;
   while (left < right) {
