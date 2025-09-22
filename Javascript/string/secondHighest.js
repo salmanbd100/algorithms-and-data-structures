@@ -1,6 +1,6 @@
-function secondHighest2(s: string){
+function secondHighest2(s){
   const stringSet = new Set(s);
-  const numberArr: number[] = [];
+  const numberArr = [];
   for (const elm of stringSet) {
     if (elm !== " " && !isNaN(Number(elm))) {
       numberArr.push(Number(elm));

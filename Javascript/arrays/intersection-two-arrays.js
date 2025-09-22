@@ -1,4 +1,4 @@
-function intersection(nums1: number[], nums2: number[]){
+function intersection(nums1, nums2){
   // create unique item list for num1
   // create unique item list for num2
   // create empty result array
@@ -6,7 +6,7 @@ function intersection(nums1: number[], nums2: number[]){
   // If it has exist then push into our result array
   const firstUniqueItems = new Set(nums1);
   const secondUniqueItems = new Set(nums2);
-  const insertedArray: number[] = [];
+  const insertedArray = [];
   for (const item of firstUniqueItems) {
     if (secondUniqueItems.has(item)) {
       insertedArray.push(item);

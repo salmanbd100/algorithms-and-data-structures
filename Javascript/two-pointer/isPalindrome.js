@@ -1,4 +1,4 @@
-var isPalindrome = function (s: string) {
+var isPalindrome = function (s) {
   s = s.toLowerCase().replace(/[^a-z0-9]/g, "");
   let left = 0;
   let right = s.length - 1;

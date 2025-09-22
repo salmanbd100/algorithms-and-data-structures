@@ -7,12 +7,12 @@
 // The function should handle cases where there are no even numbers in the array, returning 0.
 
 // o(n) o(n)
-const sumEvenNumbers = (arr: number[]) => {
+const sumEvenNumbers = (arr) => {
   if (arr.length === 0) {
     return 0;
   }
 
-  const evenNumberArr: number[] = arr.filter((item: number) => item % 2 === 0);
+  const evenNumberArr = arr.filter((item) => item % 2 === 0);
 
   if (evenNumberArr.length === 0) {
     return 0;

@@ -1,4 +1,4 @@
-function missingNumber(nums: number[]){
+function missingNumber(nums){
   // Takt two var expectedSum and currentSum
   //LOOP for expected sum before >= nums.length
   // LOOp for current sum before > nums.length

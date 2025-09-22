@@ -1,7 +1,7 @@
-function subarraySum(nums: number[], k: number){
-  let map = new Map<number, number>([[0, 1]]);
-  let current: number = 0;
-  let matches: number = 0;
+function subarraySum(nums, k){
+  let map = new Map([[0, 1]]);
+  let current = 0;
+  let matches = 0;
 
   for (let i = 0; i < nums.length; i++) {
     current += nums[i];

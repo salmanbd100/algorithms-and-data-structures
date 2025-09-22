@@ -1,8 +1,8 @@
-function chunk(arr: any[], size: number){
+function chunk(arr, size){
   // take a emty array resultArr
   // WHILE LOOP until main arr.length < 0
   // -- splice(0, size) and push it into resultArr
-  const resultArr: any[] = [];
+  const resultArr = [];
   while (arr.length > 0) {
     const chunk = arr.splice(0, size);
     resultArr.push(chunk);

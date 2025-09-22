@@ -1,4 +1,4 @@
-function removeElement(nums: number[], val: number){
+function removeElement(nums, val){
   let counter = 0;
   nums.forEach((ele, index) => {
     if (ele !== val) {

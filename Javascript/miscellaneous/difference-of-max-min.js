@@ -7,7 +7,7 @@
 // The function should handle cases where the array has only one element, returning 0 as the difference.
 // If the array is empty, the function should return null or an appropriate message indicating that the array is empty.
 
-const differenceOfMaxMin = (arr: number[]) => {
+const differenceOfMaxMin = (arr) => {
   if (arr.length === 0) {
     return "Array is empty";
   }

@@ -9,13 +9,13 @@
 // 'D' for scores 60 to 69.
 // 'F' for scores below 60.
 
-const getGrade = (score: number): string => {
-  enum EGrade {
-    A = "A",
-    B = "B",
-    C = "C",
-    D = "D",
-    F = "F",
+const getGrade = (score) => {
+  const EGrade = {
+    A: "A",
+    B: "B",
+    C: "C",
+    D: "D",
+    F: "F",
   }
   if (score > 90) {
     return EGrade.A;

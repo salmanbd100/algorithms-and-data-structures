@@ -2,11 +2,11 @@
  Do not return anything, modify nums1 in-place instead.
  */
 function mergeSortedArray(
-  nums1: number[],
-  m: number,
-  nums2: number[],
-  n: number
-): void {
+  nums1,
+  m,
+  nums2,
+  n
+) {
   let i = m - 1;
   let j = n - 1;
   let k = m + n - 1;
